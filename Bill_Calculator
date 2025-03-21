@@ -8,21 +8,19 @@ people = int(input("How many people to split the bill? "))
 total = 0
 
 if tip == 10:
-    total_tip = (bill * .10) 
-    total_bill = (total_tip + bill) 
-    total = total_bill / people
-    round(total, 2)
+    total_tip = bill * .10 
+    total_bill = total_tip + bill
+    total = round(total_bill / people, 2)
 elif tip == 15:
-    total_tip = (bill * .15) 
-    total_bill = (total_tip + bill)
-    total = total_bill / people
-    round(total, 2)
+    total_tip = bill * .15
+    total_bill = total_tip + bill
+    total = round(total_bill / people, 2)
 else:
-    tip_percentage = (tip / 100)
-    total_tip = (bill * tip_percentage) 
-    total_bill = (total_tip + bill)
-    total = total_bill / people
-    round(total, 2)
+    tip_percentage = tip / 100
+    total_tip = bill * tip_percentage 
+    total_bill = total_tip + bill
+    total = round(total_bill / people, 2)
+    
 
 print(f"Each person will pay ${total} ")
 
