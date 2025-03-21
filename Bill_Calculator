@@ -1,8 +1,8 @@
 #This is my first project that I have created, showcasing my use of if, elif, and else statements, f-strings, the round() funciton, and other math functions.
 #tip calculator project day 1
 
-bill = int(input("Welcome to the tip calculator! \nWhat was the total of the bill? $ "))
-tip = float(input("How much tip would you like to leave? 10? 15? or your own value? "))
+bill = float(input("Welcome to the tip calculator! \nWhat was the total of the bill? $ "))
+tip = int(input("How much tip would you like to leave? 10? 15? or your own value? "))
 people = int(input("How many people to split the bill? "))
 
 total = 0
